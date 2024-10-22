@@ -21,7 +21,7 @@ app.use(express.urlencoded({extended:true}));
 
 const start=async()=>{
     app.set("mongo_user");
-    const connectionDb=await mongoose.connect("mongodb+srv://sachinprogramming62:H3lEBoO8FArmabQs@cluster0.rpgov.mongodb.net/zoom");
+    const connectionDb=await mongoose.connect("Your Mongo Url");
 
     console.log(`MONGO connected ${connectionDb.connection.host}`);
     server.listen(8000,()=>{
